@@ -216,5 +216,9 @@ body{
   #cards{
     display: flex;
     justify-content: center;
-    
+  }
+
+  #inner-a{
+    padding:0;
+    margin:0;
   }
