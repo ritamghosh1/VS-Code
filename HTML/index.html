@@ -3,8 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>VS Code Clone</title>
     <link rel="stylesheet" href="../CSS/styles.css">
+  <script>
+    function togglePlayPause(){
+      let video = document.querySelector("video");
+      if(video.paused) {
+        video.play();
+        document.getElementById("toggle").innerHTML = "Pause";
+      }else {
+        video.pause();
+        document.getElementById("toggle").innerHTML = "Play";
+      }
+    }
+  </script>
 </head>
 <body>
     <div id="nav">
@@ -49,6 +61,24 @@
         
         <p class="insiders"><a href="#" class="first-links">Web</a>,<a href="#" class="first-links">Insider edition</a>, or <a href="#" class="first-links">other platforms</a></p>
     </main>
-    
+    <div id="vanishing_text">
+      By using VS Code, you agree to its <span id="ul">license</span> and <span id="ul">privacy statement.</span>
+    </div>
+    <div id="video">
+      <video src="https://code.visualstudio.com/assets/home/hero-dark-lg.webm" autoplay muted></video>
+    </div>
+    <div class="text" onclick="togglePlayPause()" id="toggle" >Pause</div>
+    <!-- <div id="cards">
+      <div class="card">
+        <h3 class="text">Choose the model that works for you</h3>
+        <p>Pick the model that works best for your project and team, including GPT 4o and Claude Sonnet.</p>
+        <div>
+          <img src="https://code.visualstudio.com/assets/home/choose-model-dark.webp" alt="">
+        </div>
+        
+      </div>
+      <div class="card"></div>
+      <div class="card"></div>
+    </div> -->
 </body>
 </html>
