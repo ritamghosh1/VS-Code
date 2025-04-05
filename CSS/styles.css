@@ -158,3 +158,36 @@ body{
   .download-btn:hover {
     background-color: #1f6feb;
   }
+
+
+.text2{
+    font-size: 17px;
+    color: #c3d0e5;
+    line-height: 20px;
+    width : 50%;
+}
+
+.picCard{
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    margin-top : 7rem;
+}
+
+.picCard h1 , .picCard p,.picCard a{
+    padding: 20px;
+    padding-left:10rem;
+    padding-right: 50px;
+    line-height : 1.75rem;
+    font-weight: normal;
+}
+
+.picCard h1{
+    padding-top : 150px;
+}
+
+.picCard img{
+    width : 50rem;
+    padding-right : 8rem;
+    padding-left: 0;
+}
